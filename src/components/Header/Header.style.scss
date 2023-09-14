@@ -1,0 +1,41 @@
+.Header {
+  padding: 0 0 121px 164px;
+}
+.headr-content {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1584px) {
+  .Header {
+    padding: 0 0 96px 136px;
+  }
+}
+
+@media screen and (max-width: 1057px) {
+  .Header {
+    padding: 0 0 64px 32px;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .Header {
+    padding: 0 0 32px 0;
+  }
+  .Header-direction {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header-title {
+    font-size: 24px;
+  }
+  .gap {
+    padding: 16px 16px 0 16px;
+  }
+  .img {
+    padding-right: 0 !important;
+  }
+}

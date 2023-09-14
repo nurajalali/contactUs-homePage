@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+.Footer {
+  background-color: #161616;
+  padding: 48px 164px 96px 164px;
+  color: #ffffff;
+
+  // .cds--col,
+  // .cds--col-lg-3 {
+  //   padding-left: 0;
+  // }
+
+  .Content--color {
+    color: #a8a8a8;
+  }
+  .Content__item--color {
+    color: #8d8d8d;
+  }
+
+  .Content__information--color {
+    color: #e0e0e0;
+  }
+  .Header__item--content {
+    font-weight: 400;
+  }
+  #Dropdown__language--color--change {
+    background-color: rgba(57, 57, 57, 1);
+    color: #ffffff;
+  }
+  #Dropdown__price--color--change {
+    background-color: rgba(57, 57, 57, 1);
+    color: #ffffff;
+  }
+  .Icon--space {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .cds--grid {
+    padding: 0;
+  }
+  .Header--content--styleLetter {
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: 42px;
+  }
+  .Content__underline {
+    text-decoration: underline;
+  }
+
+  .font-size {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1584px) {
+  .Footer {
+    padding: 48px 136px 96px 136px;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .Header--content {
+    font-size: 32px;
+  }
+  .Footer {
+    padding: 48px 32px 48px 32px;
+  }
+  .Dropdown--hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1042px) {
+  .Dropdown--show {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .Content__mobile--line {
+    display: none;
+  }
+}
+@media screen and (max-width: 481px) {
+  .Content__desktop--line {
+    display: none;
+  }
+  .Header--content {
+    font-size: 24px;
+  }
+  .Header--content--styleLetter {
+    font-size: 24px;
+  }
+}
