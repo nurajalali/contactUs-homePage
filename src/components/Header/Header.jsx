@@ -16,12 +16,14 @@ import fulldesktopImg from "../../assets/images/close-up-woman-talking-fulldeskt
 const Header = () => {
   const { isMobile, isTablet, isDesktop, isFullDesktop } = useBreakpoint();
   return (
-    <FlexGrid fullWidth className="Header ">
-      <Row className="Header-direction">
-        <Column lg={7} md={4} sm={4} className="headr-content ">
-          <Stack gap={"1rem"} className="gap">
+    <FlexGrid fullWidth className="header-padding">
+      <Row className="header__mobile-direction">
+        <Column lg={7} md={4} sm={4} className="header__left-content-center ">
+          <Stack gap={"1rem"} className="header__mobile-content-padding">
             <Section level={1}>
-              <Heading className="header-title">Get in touch with us!</Heading>
+              <Heading className="header-content-title-size">
+                Get in touch with us!
+              </Heading>
             </Section>
             <p>
               We always welcome communication with our possible partners, and
@@ -39,9 +41,9 @@ const Header = () => {
             </div>
           </Stack>
         </Column>
-        <Column className="img" lg={9} md={4} sm={4}>
+        <Column className="header__img-padding" lg={9} md={4} sm={4}>
           <img
-            className="mobilepad"
+            className="header__img-padding"
             style={{ width: "100%" }}
             src={
               isFullDesktop

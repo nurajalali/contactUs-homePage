@@ -1,23 +1,23 @@
-.Container__aboutFabizi {
+.about-fabizi-padding {
   padding: 48px 164px 96px 164px;
 }
-.Container--aboutFabizi-content {
+.about-fabizi__content-padding {
   padding: 71px 64px 71px 64px;
   align-items: center;
 }
 
-.btn {
+.about-fabizi__primary-btn {
   color: white;
   width: 100%;
 }
 
 @media screen and (max-width: 1584px) {
-  .Container__aboutFabizi {
+  .about-fabizi-padding {
     padding: 48px 136px 96px 136px;
   }
 }
 @media screen and (min-width: 1036px) {
-  .squers {
+  .about-fabizi__img-squers-svg {
     background-image: url("../../assets/squers.svg");
     background-repeat: no-repeat;
     background-position: top 16px right 320px;
@@ -25,26 +25,26 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 1036px) {
-  .squers {
+  .about-fabizi__img-squers-svg {
     background-image: url("../../assets/squers.svg");
     background-repeat: no-repeat;
     background-position: top 61px right 24px;
   }
-  .Container--aboutFabizi-content {
+  .about-fabizi__content-padding {
     padding: 16px;
   }
 
-  .Container__aboutFabizi {
+  .about-fabizi-padding {
     padding: 32px 32px 64px 32px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .Container--aboutFabizi-content {
+  .about-fabizi__content-padding {
     padding: 16px;
   }
 
-  .Container__aboutFabizi {
+  .about-fabizi-padding {
     padding: 24px 16px 48px 16px;
   }
 }

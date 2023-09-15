@@ -18,20 +18,20 @@ import "../Footer/Footer.style.scss";
 import copyRight from "../../assets/copyright-symbol-svgrepo.svg";
 const Footer = () => {
   return (
-    <FlexGrid fullWidth className="Footer">
+    <FlexGrid fullWidth className="footer-padding">
       <Row>
         <Column lg={4} md={8} sm={4}>
           <FlexGrid fullWidth>
             <Row>
-              <Column className="padding">
+              <Column>
                 <Stack gap={4}>
                   <Section level={2}>
-                    <Heading className="Header--content Header__item--content">
+                    <Heading className="footer__title-font footer__item-title-font">
                       Fabiz
-                      <span className="Header--content--styleLetter">i</span>
+                      <span className="footer__title-letter">i</span>
                     </Heading>
                   </Section>
-                  <p className="Content--color font-size">
+                  <p className="footer__paragraph-color footer__item-font-size">
                     Fabizi is the first “real” all-in-one management solution
                     for hospitality outlets. Manage your whole business from
                     interactions with clients, to the kitchen, to inventory,
@@ -49,16 +49,21 @@ const Footer = () => {
                     </Stack>
                   </div>
                   <div>
-                    <FlexGrid fullWidth className="Dropdown--show ">
+                    <FlexGrid
+                      fullWidth
+                      className="footer__dropdown-mobile-show"
+                    >
                       <Row className="gap">
                         <Column md={4} sm={4}>
                           <Dropdown
+                            id="footer_dropdown-mobile-language"
                             items={["English", "Option 2", "Option 3"]}
                           />
                           <br />
                         </Column>
                         <Column md={4} sm={4}>
                           <Dropdown
+                            id="footer_dropdown-mobile-price"
                             items={["Dollar", "Option 2", "Option 3"]}
                           />
                         </Column>
@@ -77,19 +82,35 @@ const Footer = () => {
             <Row>
               <Column>
                 <Section level={5}>
-                  <Heading className="Header__item--content">Content</Heading>
+                  <Heading className="footer__item-title-font">Content</Heading>
                 </Section>
-                <p className="Content__item--color font-size">Help center</p>
-                <p className="Content__item--color font-size">Career</p>
-                <p className="Content__item--color font-size">About us</p>
-                <p className="Content__item--color font-size">Blogs</p>
-                <p className="Content__item--color font-size">Contact us</p>
-                <p className="Content__item--color font-size">
+                <p className="footer__item-color  footer__item-font-size">
+                  Help center
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Career
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  About us
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Blogs
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Contact us
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
                   Terms and conditions
                 </p>
-                <p className="Content__item--color font-size">Press kit</p>
-                <p className="Content__item--color font-size">Hardwares</p>
-                <p className="Content__item--color font-size">Pricing</p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Press kit
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Hardwares
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Pricing
+                </p>
               </Column>
             </Row>
           </FlexGrid>
@@ -101,25 +122,55 @@ const Footer = () => {
             <Row>
               <Column>
                 <Section level={5}>
-                  <Heading className="Header__item--content">Products</Heading>
+                  <Heading className="footer__item-title-font">
+                    Products
+                  </Heading>
                 </Section>
-                <p className="Content__item--color font-size">Point of sale</p>
-                <p className="Content__item--color font-size">KDS</p>
-                <p className="Content__item--color font-size">Delivery</p>
-                <p className="Content__item--color font-size">Recipe</p>
-                <p className="Content__item--color font-size">Inventory</p>
-                <p className="Content__item--color font-size">Customer</p>
-                <p className="Content__item--color font-size">Host</p>
-                <p className="Content__item--color font-size">Team</p>
-                <p className="Content__item--color font-size">Accounting</p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Point of sale
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  KDS
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Delivery
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Recipe
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Inventory
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Customer
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Host
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Team
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Accounting
+                </p>
               </Column>
               <Column>
                 <br />
-                <p className="Content__item--color font-size">Report</p>
-                <p className="Content__item--color font-size">Insight</p>
-                <p className="Content__item--color font-size">Online</p>
-                <p className="Content__item--color font-size">Payment</p>
-                <p className="Content__item--color font-size">API</p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Report
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Insight
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Online
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Payment
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  API
+                </p>
               </Column>
             </Row>
           </FlexGrid>
@@ -131,14 +182,24 @@ const Footer = () => {
             <Row>
               <Column>
                 <Section level={5}>
-                  <Heading className="Header__item--content">Bundles</Heading>
+                  <Heading className="footer__item-title-font">Bundles</Heading>
                 </Section>
-                <p className="Content__item--color font-size">Restaurants</p>
-                <p className="Content__item--color font-size">Coffee Shops</p>
-                <p className="Content__item--color font-size">Confectionary</p>
-                <p className="Content__item--color font-size">Bakery</p>
-                <p className="Content__item--color font-size">Buffet</p>
-                <p className="Content__item--color font-size">
+                <p className="footer__item-color  footer__item-font-size">
+                  Restaurants
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Coffee Shops
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Confectionary
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Bakery
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
+                  Buffet
+                </p>
+                <p className="footer__item-color  footer__item-font-size">
                   Speciality Drinks
                 </p>
               </Column>
@@ -152,77 +213,85 @@ const Footer = () => {
             <Row>
               <Column>
                 <Section level={5}>
-                  <Heading className="Header__item--content">
+                  <Heading className="footer__item-title-font">
                     Case Studies
                   </Heading>
-                  <p className="Content__item--color font-size">The Table</p>
-                  <p className="Content__item--color font-size">Namoos</p>
-                  <p className="Content__item--color font-size">Coochini</p>
+                  <p className="footer__item-color  footer__item-font-size">
+                    The Table
+                  </p>
+                  <p className="footer__item-color  footer__item-font-size">
+                    Namoos
+                  </p>
+                  <p className="footer__item-color  footer__item-font-size">
+                    Coochini
+                  </p>
                 </Section>
               </Column>
             </Row>
           </FlexGrid>
         </Column>
 
-        <Column lg={3} md={4} sm={4}>
+        <Column lg={4} md={4} sm={4}>
           <Stack gap={4}>
-            <p className="font-size">Modern Land Trading LLC.</p>
-            <p className="Content--color font-size">
+            <p className="footer__item-font-size">Modern Land Trading LLC.</p>
+            <p className="footer__paragraph-color footer__item-font-size">
               UAE, Office1602, Damas Tower, Rega Al Buteen, Al Maktoum Street,
               Deira, Dubai, PO Box: 185916
             </p>
-            <p className="Content__underline Content__information--color font-size">
+            <p className="footer__fabizi-information-underline footer__fabizi-information-color footer__item-font-size">
               +971 50 142 8046
             </p>
           </Stack>
-          <p className="Content__underline Content__information--color font-size">
+          <p className="footer__fabizi-information-underline footer__fabizi-information-color footer__item-font-size">
             Fabizi@gmail.com
           </p>
           <br />
-          <hr className="Content__mobile--line" />
+          <hr className="footer__mobile-line" />
         </Column>
 
-        <Column lg={{ span: 3, offset: 3 }} md={4} sm={4}>
+        <Column lg={{ span: 4, offset: 2 }} md={4} sm={4}>
           <Stack gap={4}>
-            <p className="font-size">Código Conciso Lda</p>
-            <p className="Content--color font-size">
+            <p className="footer__item-font-size">Código Conciso Lda</p>
+            <p className="footer__paragraph-color footer__item-font-size">
               Portugal, Estrada Nacional 4 - Retiro do Bom Gosto, N 8 7080-111
               Vendas Novas
             </p>
-            <p className="Content__underline Content__information--color font-size">
+            <p className="footer__fabizi-information-underline footer__fabizi-information-color footer__item-font-size">
               +351 9200 53535
             </p>
           </Stack>
-          <p className="Content__underline Content__information--color font-size">
+          <p className="footer__fabizi-information-underline footer__fabizi-information-color footer__item-font-size">
             Fabizi@gmail.com
           </p>
           <br />
-          <hr className="Content__mobile--line" />
+          <hr className="footer__mobile-line" />
         </Column>
         <Column
-          lg={{ span: 4, offset: 3 }}
+          lg={{ span: 4, offset: 2 }}
           md={4}
           sm={0}
-          className="Dropdown--hide "
+          className="footer__dropdown-desktop-hide"
         >
           <Dropdown
-            id="Dropdown__language--color--change"
+            id="footer__Dropdown-color"
             label="English"
             items={["English", "Option 2", "Option 3"]}
           />
           <br />
 
           <Dropdown
-            id="Dropdown__price--color--change"
+            id="footer__Dropdown-price-color"
             label="Dollar"
             items={["Dollar", "Option 2", "Option 3"]}
           />
         </Column>
       </Row>
-      <hr className="Content__desktop--line" />
+      <hr className="footer__desktop-line" />
       <Row lg={4} md={4} sm={4}>
-        <img className="Icon--space" src={copyRight} />
-        <p>2019-2023 Fabizi. All rights reserved.</p>
+        <img className="footer__copyright-icon" src={copyRight} />
+        <p className="footer__copyright-text">
+          2019-2023 Fabizi. All rights reserved.
+        </p>
       </Row>
     </FlexGrid>
   );

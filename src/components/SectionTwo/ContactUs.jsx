@@ -52,6 +52,11 @@ const ContactForm = () => {
       console.log(errors.mobile);
     }
 
+    if (Boolean(errors.mobile) === true) {
+      Boolean(errors.phoneCode) === true;
+      errors.phoneCode = "required";
+    }
+
     if (textDescription.length == 0) {
       errors.textDescription = "write message";
     }
@@ -59,11 +64,11 @@ const ContactForm = () => {
   };
 
   return (
-    <FlexGrid fullWidth className="contactForm ">
-      <Row className="contactForm__space">
+    <FlexGrid fullWidth className="contact-form-padding ">
+      <Row className="contact-form__section-left-right-gap">
         <Column lg={8} md={8} sm={4}>
           <Section level={1}>
-            <Heading className="contactForm-main__header">
+            <Heading className="contact-form__left-title-font">
               How to contact with us?
             </Heading>
           </Section>
@@ -75,12 +80,12 @@ const ContactForm = () => {
         <Column lg={8} md={8} sm={4}>
           <FlexGrid
             fullWidth
-            className="contactForm__border contactForm-bottem__gap"
+            className="contact-form__form-border  contact-form__primary-btn-gap"
           >
-            <Row className="contactForm__gap">
+            <Row className="contact-form__form-row-gap">
               <Column lg={16} md={8} sm={4}>
                 <Section>
-                  <Heading className="contactForm__header">
+                  <Heading className="contact-form__right-title-font">
                     Send us your massages!
                   </Heading>
                 </Section>
@@ -111,6 +116,8 @@ const ContactForm = () => {
                     <Column lg={4} md={2} sm={1}>
                       <FluidSelect
                         labelText="Code"
+                        warn={Boolean(errors.phoneCode)}
+                        warnText={errors.phoneCode}
                         value={phoneCode}
                         onChange={(e) => setPhoneCode(e.target.value)}
                       >
@@ -127,9 +134,7 @@ const ContactForm = () => {
                         value={mobile}
                         warn={Boolean(errors.mobile)}
                         warnText={errors.mobile}
-                        onChange={(e) =>
-                          setMobile(e.target.value.toUpperCase())
-                        }
+                        onChange={(e) => setMobile(e.target.value)}
                       />
                     </Column>
                   </Grid>
@@ -152,14 +157,14 @@ const ContactForm = () => {
                 </FluidForm>
               </Column>
             </Row>
-            <Row className="contact-form__primary-positin">
+            <Row className="contact-form__primary-btn-positin">
               <Column
                 lg={{ span: 8, offset: 8 }}
                 md={{ span: 4, offset: 4 }}
                 sm={{ span: 2, offset: 2 }}
               >
                 <Button
-                  className="contact-form__primary-btn"
+                  className="contact-form__primary-btn contact-form__mobile-primary-btn"
                   renderIcon={ArrowRight}
                   onClick={handleSubmit}
                 >

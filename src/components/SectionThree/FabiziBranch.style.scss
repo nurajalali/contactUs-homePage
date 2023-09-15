@@ -1,46 +1,42 @@
-.fabiziBranch-card {
+.branch-card-padding {
   padding: 96px 164px 0 164px;
 }
-.fabiziBranchCrad__header {
+.branch-card__title-font {
   font-size: 24px;
   font-weight: 300;
   color: #161616;
 }
-.fabiziBranchCrad-bold__content {
+.branch-crad__first-sentence-font {
   font-weight: 400;
   color: #525252;
 }
-.fabiziBranchCrad__content {
+.branch-crad__second-sentence-font {
   font-weight: 400;
   color: #6f6f6f;
 }
 
-.icon-space {
+.branch-crad__arrow-icon {
   margin-right: 12px;
 }
 
-.icon-text {
+.branch-crad__arrow-text {
   display: flex;
   align-items: center;
 }
 
-.ProductiveCard {
-  color: black;
-}
-
 @media screen and (max-width: 1584px) {
-  .fabiziBranch-card {
+  .branch-card-padding {
     padding: 42px 136px 0 136px;
   }
 }
 @media screen and (max-width: 1036px) {
-  .fabiziBranch-card {
-    padding: 32px;
+  .branch-card-padding {
+    padding: 32px 32px 32px 32px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .fabiziBranch-card {
+  .branch-card-padding {
     padding: 32px 16px 32px 16px;
   }
 }

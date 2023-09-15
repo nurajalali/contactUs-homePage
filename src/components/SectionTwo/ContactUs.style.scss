@@ -1,58 +1,65 @@
-.contactForm {
+.contact-form-padding {
   padding: 0 164px 0 164px;
 }
-.contactForm__header {
+.contact-form__right-title-font {
   font-size: 24px;
   font-weight: 300;
 }
-.contactForm__border {
+.contact-form__form-border {
   border: 1px solid #e0e0e0;
   padding: 16px 16px 0 16px;
 }
-.contactForm__gap {
+.contact-form__form-row-gap {
   gap: 33px;
 }
-
-.contactForm-bottem__gap {
+.contact-form__primary-btn-gap {
   display: flex;
   flex-direction: column;
   row-gap: 24px !important;
 }
-.contact-form__primary-positin {
+.contact-form__primary-btn-positin {
   position: relative;
   height: 3rem;
 }
-.contact-form__primary-btn {
-  // width: 50%;
-  padding-left: 20px;
-  position: absolute;
-  right: 0;
-}
 
 @media only screen and (max-width: 1584px) {
-  .contactForm {
+  .contact-form-padding {
     padding: 0 136px 0 136px;
   }
 }
 @media only screen and (max-width: 1055px) {
-  .contactForm {
+  .contact-form-padding {
     padding: 0 32px 0 32px;
   }
-  .contactForm__space {
+  .contact-form__section-left-right-gap {
     gap: 24px;
   }
-  .contactForm-main__header {
+  .contact-form__left-title-font {
     font-size: 32px;
   }
 }
+@media only screen and (min-width: 480px) {
+  .contact-form__primary-btn {
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
-  .contactForm {
+  .contact-form-padding {
     padding: 0 16px 0 16px;
   }
-  .contactForm__space {
+  .contact-form__section-left-right-gap {
     gap: 16px;
   }
-  .contactForm-main__header {
+  .contact-form__left-title-font {
     font-size: 24px;
+  }
+
+  .contact-form__mobile-primary-btn {
+    padding-left: 20px !important;
+    position: absolute;
+    right: 0;
   }
 }
