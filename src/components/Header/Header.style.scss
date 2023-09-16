@@ -26,6 +26,12 @@
   }
 }
 
+@media screen and (min-width: 670px) {
+  .header__img-margin {
+    margin-left: 1rem;
+  }
+}
+
 @media screen and (min-width: 670px) and (max-width: 1057px) {
   .cds--col-lg-7 {
     padding-left: 0;
@@ -57,16 +63,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .header-padding {
-    padding: 0 0 32px 0;
-  }
-  .header__mobile-direction {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .header-content-title-size {
-    font-size: 24px;
-  }
   .header__mobile-content-padding {
     // padding: 16px 0 0 0;
     padding: 16px 16px 0 16px;

@@ -43,6 +43,7 @@ const Header = () => {
         </Column>
         <Column className="header__img" lg={9} md={4} sm={4}>
           <img
+            className="header__img-margin"
             style={{ width: "100%" }}
             src={
               isFullDesktop

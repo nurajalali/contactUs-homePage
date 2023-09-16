@@ -23,11 +23,9 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [textDescription, setTextDescription] = useState("");
   const [errors, setErrors] = useState({});
-  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = () => {
+  const validForm = () => {
     let errors = {};
-
     if (firstName.length == 0) {
       errors.firstName = "Invalid Form, first name is required";
     } else if (!firstName.match("^[a-zA-Z]+$")) {
@@ -36,20 +34,16 @@ const ContactForm = () => {
 
     if (lastName.length == 0) {
       errors.lastName = "Invalid Form, family name is required";
-      console.log(errors.lastName);
     } else if (!lastName.match("^[a-zA-Z]+$")) {
       errors.lastName = "it's not a family name";
-      console.log(errors.lastName);
     }
 
     if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
       errors.email = "Email isn't valid";
-      console.log(errors.email);
     }
 
     if (!mobile.match("^\\d+$")) {
       errors.mobile = "enter valid number";
-      console.log(errors.mobile);
     }
 
     if (Boolean(errors.mobile) === true) {
@@ -61,6 +55,11 @@ const ContactForm = () => {
       errors.textDescription = "write message";
     }
     setErrors(errors);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    validForm();
   };
 
   return (
