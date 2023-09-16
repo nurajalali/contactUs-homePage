@@ -1,9 +1,17 @@
 .header-padding {
   padding: 0 0 121px 164px;
+  .cds--row {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .header__left-content-center {
   display: flex;
   align-items: center;
+}
+.header__img {
+  padding-right: 0 !important;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 1584px) {
@@ -20,9 +28,6 @@
   .header-content-title-size {
     font-size: 24px;
   }
-  .header__img-padding {
-    padding-right: 0 !important;
-  }
 }
 
 @media screen and (max-width: 670px) {
@@ -38,8 +43,5 @@
   }
   .header__mobile-content-padding {
     padding: 16px 16px 0 16px;
-  }
-  .header__img-padding {
-    padding-right: 0 !important;
   }
 }

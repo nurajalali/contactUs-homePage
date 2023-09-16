@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
 .footer-padding {
   background-color: #161616;
-  padding: 48px 164px 96px 164px;
+  padding: 48px 164px 24px 164px;
   color: #ffffff;
+
+  // .cds--col-sm-4 {
+  //   padding-left: 0;
+  // }
 
   .footer__paragraph-color {
     color: #a8a8a8;
@@ -50,7 +54,7 @@
 }
 @media screen and (max-width: 1584px) {
   .footer-padding {
-    padding: 48px 136px 96px 136px;
+    padding: 48px 136px 24px 136px;
   }
 }
 
@@ -59,7 +63,7 @@
     font-size: 32px;
   }
   .footer-padding {
-    padding: 48px 32px 48px 32px;
+    padding: 48px 32px 24px 32px;
   }
   .footer__dropdown-desktop-hide {
     display: none;
@@ -78,6 +82,9 @@
   }
 }
 @media screen and (max-width: 481px) {
+  .footer-padding {
+    padding: 32px 16px 24px 16px;
+  }
   .footer__desktop-line {
     display: none;
   }

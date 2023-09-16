@@ -11,7 +11,9 @@ const AboutFabizi = () => {
             <FlaggingTaxi size={32} />
           </Column>
           <Column lg={6} md={8} sm={4}>
-            Learn How Fabizi Started its Journey As a Management Solution.
+            <p>
+              Learn How Fabizi Started its Journey As a Management Solution.
+            </p>
           </Column>
           <Column lg={{ span: 5, offset: 4 }} md={4} sm={4}>
             <br />
