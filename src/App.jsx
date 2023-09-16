@@ -1,18 +1,15 @@
-import "./App.scss";
-import Header from "./components/Header/Header";
-import ContactForm from "./components/SectionTwo/ContactUs";
-import FabiziBranch from "./components/SectionThree/FabiziBranch";
-import AboutFabizi from "./components/SectionFour/AboutFabizi";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./app.scss";
+import Home from "./Pages/Home";
+import Message from "./Pages/Message";
 function App() {
   return (
-    <>
-      <Header />
-      <ContactForm />
-      <FabiziBranch />
-      <AboutFabizi />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Message" element={<Message />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

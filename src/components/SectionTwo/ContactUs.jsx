@@ -13,7 +13,8 @@ import {
 } from "@carbon/react";
 import { ArrowRight } from "@carbon/react/icons";
 import "../SectionTwo/ContactUs.style.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -23,6 +24,15 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [textDescription, setTextDescription] = useState("");
   const [errors, setErrors] = useState({});
+  const [submit, setSubmit] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (Object.keys(errors).length == 0 && submit) {
+      navigate("./Message");
+      setSubmit(false);
+    }
+  });
 
   const validForm = () => {
     let errors = {};
@@ -54,11 +64,13 @@ const ContactForm = () => {
     if (textDescription.length == 0) {
       errors.textDescription = "write message";
     }
+
     setErrors(errors);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmit(true);
     validForm();
   };
 
