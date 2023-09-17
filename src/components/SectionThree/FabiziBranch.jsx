@@ -31,6 +31,7 @@ const FabiziBranch = () => {
                 Watch in google map
               </p>
             }
+            className="branch-card-height"
           >
             <Stack gap={"19px"}>
               <div>
@@ -78,6 +79,7 @@ const FabiziBranch = () => {
             primaryButtonText={
               <p style={{ color: "black" }}>Watch in google map</p>
             }
+            className="branch-card-height"
           >
             <Stack gap={"19px"}>
               <div>

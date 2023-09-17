@@ -275,7 +275,16 @@ const Footer = () => {
           <Dropdown
             id="footer__Dropdown-color"
             label="English"
-            items={["English", "Option 2", "Option 3"]}
+            // items={["English", "Option 2", "Option 3"]}
+            items={[
+              { text: "English" },
+              { text: "Option 1" },
+              { text: "Option 2" },
+            ]}
+            itemToString={(item) => (item ? item.text : "")}
+            itemToElement={(item) =>
+              item ? <span style={{ color: "red" }}>{item.text} </span> : ""
+            }
           />
           <br />
 

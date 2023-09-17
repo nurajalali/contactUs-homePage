@@ -10,17 +10,20 @@
   color: white;
   width: 100%;
 }
+.about-fabizi__img-squers-svg {
+  background-image: url("../../assets/squers.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 400px;
+}
 
 @media screen and (max-width: 1584px) {
   .about-fabizi-padding {
     padding: 48px 136px 96px 136px;
   }
-}
-@media screen and (min-width: 1036px) {
   .about-fabizi__img-squers-svg {
     background-image: url("../../assets/squers.svg");
     background-repeat: no-repeat;
-    background-position: top 16px right 320px;
+    background-position: top 16px right 375px;
   }
 }
 
@@ -28,7 +31,7 @@
   .about-fabizi__img-squers-svg {
     background-image: url("../../assets/squers.svg");
     background-repeat: no-repeat;
-    background-position: top 61px right 24px;
+    background-position: top 12px right 24px;
   }
   .about-fabizi__content-padding {
     padding: 16px;

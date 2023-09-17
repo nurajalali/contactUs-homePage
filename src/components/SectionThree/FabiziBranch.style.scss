@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.branch-card-height {
+  height: 318px;
+}
+
 @media screen and (max-width: 1584px) {
   .branch-card-padding {
     padding: 42px 136px 0 136px;
@@ -32,6 +36,9 @@
 @media screen and (max-width: 1036px) {
   .branch-card-padding {
     padding: 32px 32px 0 32px;
+  }
+  .branch-card-height {
+    height: 341px;
   }
 }
 
